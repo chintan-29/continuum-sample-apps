@@ -4,4 +4,4 @@
   .train
     %h3= train["destination"]
     .estimate
-      = [train["estimate"]].flatten.collect { |e| e["minutes"] + " mins" }.join(", ")
+      = [train["estimate"]].flatten.collect { |e| "#{e['minutes']} mins" }.join(", ")
