@@ -36,9 +36,16 @@ app.get('/base.css', routes.base);
 app.get('/bg.png', routes.bg);
 app.get('/logo.jpg', routes.logo);
 app.get('/app.css', routes.appcss);
-app.get('/quit', function(req, res) {
-  process.exit(1);
-});
+app.get('/quit', function(req, res){
+            console.log('Exit button clicked.')
+            res.writeHead(200);
+            res.end("goodbye, world");
+            setTimeout(function() {
+                console.log("Attempting Exit(1)");
+                process.exit(1);
+            }, 1000);
+    }
+);
 
 app.get('/env', routes.env);
 
@@ -47,11 +54,11 @@ var startTime = new Date();
 
 app.get('/instance', function(req, res) {
   console.log('hello!')
-  console.log(req.host)
+  console.log(req.hostname)
   res.send({
     instance_id: uuid,
     start_time: startTime,
-    host: req.host
+    host: req.hostname
   });
 });
 
