@@ -4,10 +4,10 @@ require 'json'
 require 'fileutils'
 
 class VagrantHelper
-    VMWARE_BOX = "continuum_trial_vagrant_vmware_1435607430"
-    VMWARE_CHECKSUM256 = "350b41c7f4dbbd94e74e651e05f75b9cae6688b6f2fbb822ef1906a4d738e93e"
-    VIRTUALBOX_BOX = "continuum_trial_vagrant_virtualbox_1435607430"
-    VIRTUALBOX_CHECKSUM256 = "7aaf83724c07785a099ebf608de3710b4a5512f8efb8e24f82d09e4d7b46567c"
+    VMWARE_BOX = "continuum_trial_vagrant_vmware_1436979246"
+    VMWARE_CHECKSUM256 = "5b9771390865f43a5262d2f348a25a6909b834adb16be789c2b2a75b1d7c1e85"
+    VIRTUALBOX_BOX = "continuum_trial_vagrant_virtualbox_1436979246"
+    VIRTUALBOX_CHECKSUM256 = "a0908aea1b18d46c7b7972c40cd8ecf549e0cea33c02ad4da85f6fb1ad8ecbf0"
 
   def initialize
     find_provider
