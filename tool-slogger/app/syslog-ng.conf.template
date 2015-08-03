@@ -1,0 +1,9 @@
+
+@version: 3.6
+@include "scl.conf"
+
+source s_remote { tcp(port(1999)); };
+
+destination d_all_remote { file("/app/logs/all-remote-logs"); };
+
+log { source(s_remote); destination(d_all_remote); };
