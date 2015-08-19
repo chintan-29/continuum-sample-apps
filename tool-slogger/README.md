@@ -1,6 +1,6 @@
 # SLOGGER
 
-#### Version 0.1
+#### Version 0.2
 
 Slogger is a simple syslog server that is built via the bash staging process.
 
